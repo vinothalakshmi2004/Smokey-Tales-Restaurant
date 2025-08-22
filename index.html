@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smokey Tales • Restaurant Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="logo"></span><span>Smokey Tales•</span>
+      </a>
+      <nav>
+        <button class="hamburger">☰</button>
+        <ul id="menu">
+          <li><a href="#menu-section">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button class="btn ghost" id="show-menu">View Menu</button>
+        <a class="btn primary" href="order.html">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">Fresh • Local • Cozy</div>
+        <h1 class="title">Taste comfort with a modern twist.</h1>
+        <p class="lead">
+          Welcome to <strong>Smokey Tales</strong>, where seasonal ingredients meet simple techniques.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="order.html">Order Now</a>
+          <a class="btn ghost" href="#reserve">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Signature pasta" />
+      </div>
+    </div>
+  </main>
+
+  <!-- Menu Section -->
+  <section id="menu-section" class="container">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-grid">
+      <!-- Starters -->
+      <div class="menu-category">
+        <h3>Starters</h3>
+        <ul>
+          <li><span>Garlic Bread</span><span>$5</span></li>
+          <li><span>Caesar Salad</span><span>$7</span></li>
+          <li><span>Tomato Soup</span><span>$6</span></li>
+        </ul>
+      </div>
+
+      <!-- Main Course -->
+      <div class="menu-category">
+        <h3>Main Course</h3>
+        <ul>
+          <li><span>Grilled Chicken</span><span>$15</span></li>
+          <li><span>Smokey Pasta</span><span>$12</span></li>
+          <li><span>Margherita Pizza</span><span>$14</span></li>
+        </ul>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <ul>
+          <li><span>Chocolate Lava Cake</span><span>$8</span></li>
+          <li><span>Tiramisu</span><span>$9</span></li>
+          <li><span>Ice Cream Sundae</span><span>$6</span></li>
+        </ul>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-category">
+        <h3>Beverages</h3>
+        <ul>
+          <li><span>Fresh Lime Soda</span><span>$4</span></li>
+          <li><span>Mango Smoothie</span><span>$6</span></li>
+          <li><span>Cocktails</span><span>$10</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Today’s Specials -->
+  <section id="specials" class="container" style="display:none;">
+    <h2 class="section-title">Today’s Specials</h2>
+    <div class="grid menu" id="today-list"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Our Restaurant</h2>
+    <p>
+      Since <strong>1998</strong>, <strong>Smokey Tales</strong> has been serving guests at the
+      breathtaking <strong>Varalaka Cliff</strong>. Our restaurant combines coastal charm with
+      modern comfort, offering a unique blend of food, relaxation, and activities.
+    </p>
+    <p>
+      We take pride in our <strong>multi-cuisine kitchen</strong> featuring Italian classics,
+      authentic South Indian flavors, Kerala specials, and global continental dishes — all crafted
+      with fresh, local ingredients. Guests can enjoy their meals by the
+      <strong>swimming pool</strong>, at our vibrant <strong>bar</strong>, or in our cozy
+      <strong>beach-view dining areas</strong>.
+    </p>
+    <p>
+      More than just dining, Smokey Tales offers a complete experience. Relax with
+      <strong>indoor activities</strong>, enjoy a <strong>pet-friendly environment</strong>, or join us
+      for a <strong>night campfire</strong> by the beach. We also provide <strong>tourist guidance</strong>,
+      <strong>rental bikes & cars</strong>, and curated plans for exploring the best of Varalaka Cliff.
+    </p>
+    <p>
+      Whether you’re a traveler, a family, or a group of friends, Smokey Tales promises
+      not just food, but memories — where every meal feels like a celebration.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">From Our Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Restaurant Dining Area" />
+        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=1200&auto=format&fit=crop" alt="Swimming Pool Restaurant Ambience" />
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop" alt="Cozy Indoor Restaurant" />
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop" alt="Fresh Salad" />
+        <img src="https://images.unsplash.com/photo-1543353071-087092ec393a?q=80&w=800&auto=format&fit=crop" alt="Ambience Lighting" />
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800&auto=format&fit=crop" alt="Restaurant Table Setup" />
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=800&auto=format&fit=crop" alt="Signature Pizza" />
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop" alt="Pasta Dish" />
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop" alt="Pizza Slice" />
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop" alt="Dessert" />
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Maldives Overwater Restaurant" />
+        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?q=80&w=1200&auto=format&fit=crop" alt="Elegant Restaurant Ambience" />
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop" alt="Cozy Restaurant with Warm Lights" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Reserve -->
+  <section id="reserve" class="container">
+    <h2 class="section-title">Reserve a Table</h2>
+    <form id="reservation-form">
+      <div class="row">
+        <div>
+          <label>Name</label>
+          <input id="name" required>
+        </div>
+        <div>
+          <label>Guests</label>
+          <input id="guests" type="number" min="1" required>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Table</label>
+          <select id="table" required>
+            <option>Table 1</option>
+            <option>Table 2</option>
+            <option>Table 3</option>
+          </select>
+        </div>
+        <div>
+          <label>Time</label>
+          <input id="time" type="time" required>
+        </div>
+      </div>
+      <button class="btn primary" type="submit">Submit Reservation</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>📍 Address:</strong> Smokey Tales Restaurant, Varalaka Cliff, Kerala, India</p>
+      <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+      <p><strong>✉️ Email:</strong> info@smokeytales.com</p>
+      <p><strong>🕒 Hours:</strong> Monday – Sunday, 11:00 AM – 11:00 PM</p>
+    </div>
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.169252835918!2d76.706!3d8.737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e9a6b8b2b9b3%3A0x1f0f!2sVaralaka%20Cliff!5e0!3m2!1sen!2sin!4v1706358612345"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="brand"><span class="logo"></span>Smokey Tales•</div>
+      <div class="small">© <span id="year"></span> Smokey Tales.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

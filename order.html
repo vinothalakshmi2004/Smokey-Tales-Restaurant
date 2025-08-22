@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smokey Tales • Order Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html#home">
+        <span class="logo"></span><span>Smokey Tales•</span>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html#menu-section">Menu</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#reserve">Reserve</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Order Section -->
+  <main class="container">
+    <h2 class="section-title">Order Your Favorites</h2>
+    <form id="order-form">
+      <div class="menu-grid">
+        <!-- Starters -->
+        <div class="menu-category">
+          <h3>Starters</h3>
+          <label><input type="checkbox" name="items" value="Garlic Bread - $5"> Garlic Bread ($5)</label><br>
+          <label><input type="checkbox" name="items" value="Caesar Salad - $7"> Caesar Salad ($7)</label><br>
+          <label><input type="checkbox" name="items" value="Tomato Soup - $6"> Tomato Soup ($6)</label>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-category">
+          <h3>Main Course</h3>
+          <label><input type="checkbox" name="items" value="Grilled Chicken - $15"> Grilled Chicken ($15)</label><br>
+          <label><input type="checkbox" name="items" value="Smokey Pasta - $12"> Smokey Pasta ($12)</label><br>
+          <label><input type="checkbox" name="items" value="Margherita Pizza - $14"> Margherita Pizza ($14)</label>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category">
+          <h3>Desserts</h3>
+          <label><input type="checkbox" name="items" value="Chocolate Lava Cake - $8"> Chocolate Lava Cake ($8)</label><br>
+          <label><input type="checkbox" name="items" value="Tiramisu - $9"> Tiramisu ($9)</label><br>
+          <label><input type="checkbox" name="items" value="Ice Cream Sundae - $6"> Ice Cream Sundae ($6)</label>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-category">
+          <h3>Beverages</h3>
+          <label><input type="checkbox" name="items" value="Fresh Lime Soda - $4"> Fresh Lime Soda ($4)</label><br>
+          <label><input type="checkbox" name="items" value="Mango Smoothie - $6"> Mango Smoothie ($6)</label><br>
+          <label><input type="checkbox" name="items" value="Cocktails - $10"> Cocktails ($10)</label>
+        </div>
+      </div>
+      <button class="btn primary" type="submit">Place Order</button>
+    </form>
+
+    <div id="order-success" style="display:none; margin-top:20px;">
+      <h3>✅ Your order has been placed successfully!</h3>
+      <p>Thank you for choosing <strong>Smokey Tales</strong>. We’re preparing your food with love ❤️</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="brand"><span class="logo"></span>Smokey Tales•</div>
+      <div class="small">© <span id="year"></span> Smokey Tales.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Handle order form
+    document.getElementById("order-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("order-form").style.display = "none";
+      document.getElementById("order-success").style.display = "block";
+    });
+
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
